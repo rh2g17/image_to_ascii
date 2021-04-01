@@ -24,10 +24,13 @@ pixel_array = []
 for x in range(400):
     second_array = []
     for y in range(400):
-        second_array.append(rgb_to_brightness(im.getpixel((x, y)), 1))
+        second_array.append(
+            rgb_to_brightness(im.getpixel((x, y)), 1)
+        )
     pixel_array.append(second_array)
 
 print("\nSuccessfully loaded image into pixel array.")
+
 
 
 
